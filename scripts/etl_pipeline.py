@@ -181,6 +181,8 @@ def main():
         .appName("NYCTaxiPipeline") \
         .master("local[*]") \
         .config("spark.driver.extraClassPath", JDBC_JAR) \
+        .config("spark.driver.extraJavaOptions", "-Duser.timezone=UTC") \
+        .config("spark.sql.session.timeZone", "UTC") \
         .getOrCreate()
     spark.sparkContext.setLogLevel("ERROR")
 
