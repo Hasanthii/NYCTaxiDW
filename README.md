@@ -67,7 +67,7 @@ Rows are rejected (and saved separately, with a reason) if the dropoff is before
 |---|---|---|---|
 | 2024-01 | 2,964,624 | 2,869,641 | 94,983 |
 | 2024-02 | 3,007,526 | 2,901,452 | 106,074 |
-| 2024-03 | see log | 3,439,925 | see log |
+| 2024-03 | 3,582,628 | 3,439,925 | 142,703 |
 
 `sql/09_validation_checks.sql` runs seven checks on the warehouse. All return 0 failures.
 
